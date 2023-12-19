@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nunito:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+/* Universal */
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.btn {
+    outline: none;
+    display: inline-block;
+    margin-top: 1rem;
+    background: orange;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid orange;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: #f3df26;
+    color: orange;
+}
+
+
+/*  ------- Header Start ----------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    padding: 2rem 9%;
+    z-index: 10000;
+}
+
+#menu-bar {
+    color: #fff;
+    font-size: 3rem;
+    border: .1rem solid #666;
+    border-radius: .5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+#close-bar {
+    color: #fff;
+    font-size: 3rem;
+    border: .1rem solid #666;
+    border-radius: .5rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: orange;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+.icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: orange;
+}
+
+#ch-btn {
+    display: none;
+}
+
+#form-close {
+    display: none;
+}
+
+.search-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+}
+
+#myFrm {
+    display: none;
+}
+
+.search-bar #srch-bar {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.search-bar label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+.search-bar label:hover {
+    color: orange;
+}
+
+.loginForm {
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10000;
+}
+
+.loginForm form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.loginForm form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.loginForm form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid #002;
+    text-transform: none;
+}
+
+.loginForm form .box:focus {
+    border-color: orange;
+}
+
+#remember {
+    margin: 2rem 0;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.loginForm form .btn {
+    display: block;
+    width: 100%;
+}
+
+.loginForm form p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.loginForm form p a {
+    color: orange;
+}
+
+.loginForm form p a:hover {
+    color: #119b9bee;
+    text-decoration: underline;
+}
+
+
+/*  ------- Header End ----------- */
+
+
+/*  ------- Hero Start ----------- */
+
+.hero {
+    padding: 2rem 9%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0.3rem .5rem rgba(0, 0, 0, .2);
+}
+
+.content p {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.hero .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .controls .vid-btn {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.hero .controls .vid-btn.active {
+    background: orang;
+}
+
+
+/*  ------- Hero End ----------- */
+
+
+/*  ------- Book Start ----------- */
+
+.book {
+    display: block;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: orange;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+#space1 {
+    background: none;
+}
+
+.container {
+    display: flex;
+}
+
+.img {
+    width: 50%;
+}
+
+#bookImg {
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.form form h3 {
+    font-size: 1.5rem;
+}
+
+.form form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.form form input {
+    padding: 1rem;
+}
+
+
+/*  ------- Book End ----------- */
+
+
+/* ------- Pack Start ----------- */
+
+.package {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev i {
+    font-size: 3.5rem;
+    margin: 0.5rem;
+    color: orange;
+}
+
+.next i {
+    font-size: 3.5rem;
+    margin: 0.5rem;
+    color: orange;
+}
+
+
+/* ---- Pack End --------- */
+
+
+/*  ------- Serv Start ----------- */
+
+.services {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.srv-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 4rem;
+}
+
+.srv-container .box {
+    flex: 1 1 35rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.srv-container .box i {
+    padding: 1rem;
+    color: orange;
+    font-size: 5rem;
+}
+
+.srv-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.srv-container .box .box:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+
+/*  ------- Serv End ----------- */
+
+
+/*  ------- Gllr Start ----------- */
+
+.gallery {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.glr-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 4rem;
+}
+
+.glr-container .gllr {
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    flex: 1 1 35rem;
+    height: 25rem;
+    position: relative;
+}
+
+.glr-container .gllr img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.glr-container .box .contents-glr {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.glr-container .box:hover .contents-glr {
+    top: 0;
+}
+
+.contents-glr h3 {
+    font-size: 2rem;
+    color: orange;
+}
+
+.contents-glr p {
+    font-size: 1.7rem;
+    color: #eee;
+}
+
+
+/*  ------- Gller End ----------- */
+
+
+/*  ------- Contact Start ----------- */
+
+.contact {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.inputBox input,
+textarea {
+    width: 48%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+    border: none;
+}
+
+textarea {
+    height: 15rem;
+    resize: none;
+    width: 97%;
+}
+
+
+/*  ------- Contact End ----------- */
+
+
+/*  ------- Footer Start ----------- */
+
+.footer {
+    background: #333;
+    color: #fff;
+}
+
+.footer .foot-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot h3 {
+    font-size: 2.5rem;
+}
+
+.footer a {
+    color: #002;
+    font-size: 1.5rem;
+}
+
+
+/*  ------- Footer End ----------- */
